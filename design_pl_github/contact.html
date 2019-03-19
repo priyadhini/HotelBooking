@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>contact</title>
+        <meta charset="UTF-8">
+         <link rel="stylesheet" href="hotel1.css" type="text/css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>                      
+            <div class="home">
+                <div class="topnav">
+                    <span class="leftspan">
+                        <a href="index.html">HOME</a>
+                        <a href="About.html">ABOUT</a>
+                        <a href="room.html">OUR ROOMS</a>
+                        <a class="namelogo">DG Hotel</a>
+                    </span>
+                    <span class="rightspan"> 
+                       
+
+                        <a href="contact.html">CONTACT</a>
+                        
+                    </span>
+                </div>              
+            </div>
+           
+        </header>
+        <section>
+             <div class="contact_bg">
+                 <img src="recep.jpg" alt="no">
+                 <div  class="contact_inner">
+                 
+                     <center> <h1>CONTACT</h1></center>
+                 
+                 </div>
+            </div>
+           
+             <div class="row" id="contact_s">
+                <div class="col-md-10 col-md-offset-1 col-sm-7 col-xs-12">
+                    <div class="contact-form-area">
+                        <div class="cf-msg"></div>
+                        <form id="cf">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="cf-input-box">
+                                        <input type="text" placeholder="Your name here" id="fname" name="fname" required>
+                                        <p id="err1" class="error"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="cf-input-box">
+                                        <input type="email" placeholder="Email" id="email" name="email" required>
+                                        <p id="err2" class="error"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="cf-input-box">
+                                        <input type="text"  placeholder="Subject" id="subject" name="subject" required>
+                                        <p id="err3" class="error"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="cf-input-box">
+                                        
+                                        <textarea class="contact-textarea" placeholder="Message" id="msg" name="msg" required></textarea>
+                                        <p id="err4" class="error"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="cf-input-box">
+                                        <input type="submit" id="submit" class="cont-submit btn-contact" name="submit" value="SEND MESSAGE">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                      
+
+                    </div>
+                </div>
+           
+             </div>
+                  <script type="text/javascript">
+	var btn=document.getElementById("submit");
+	btn.onclick=function(e){
+		
+		var bool=validate();
+		if(bool){
+			e.preventDefault();
+		}
+	};
+	function validate(){
+           
+                var fname=document.getElementById("fname");
+		var email=document.getElementById("email");
+		var sub=document.getElementById("subject");
+                var msgs=document.getElementById("msg");
+                if(fname.checkValidity){
+                    
+                    document.getElementById("err1").innerHTML=fname.validationMessage;
+                }
+                
+                
+		if(email.checkValidity){
+			 document.getElementById("err2").innerHTML=email.validationMessage;
+		}
+                if(email.validity.patternMismatch){
+			 document.getElementById("err2").innerHTML="INVALID";
+		}
+		if(sub.checkValidity)
+            {
+            	
+                document.getElementById("err3").innerHTML=sub.validationMessage;
+            }
+            if(msgs.checkValidity)
+            {
+            	
+                document.getElementById("err4").innerHTML=msgs.validationMessage;
+            }
+            
+	}
+	
+
+</script>      
+        </section>
+        
+        <article>
+            <div class="col-md-10 col-md-offset-1 col-sm-5 col-xs-12">
+                    <div class="contact2-contact-elements contact-elements">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="ce-box">
+                                <h2>Meet Us</h2>
+                                <p>Architecture Downtown St, </p>
+                                <p>Melbourne Australia</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="ce-box">
+                                <h2>phone</h2>
+                                <p>(+1) 1245 - 15487- 258</p>
+                                <p>(+1) 1245 - 15487- 258</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="ce-box">
+                                <h2>email</h2>
+                                <p>indo@yormail.com</p>
+                                <p>yourmail@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <div class="ce-box">
+                                <h2>website</h2>
+                                <a href="#">http://www.yourwebsite.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+        </article>
+        <footer>
+            <div class="footer-area">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget footer-logo-widget">
+                            
+                            <div class="footer-social">
+                                <span>Follow Us:</span>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                   
+                                </ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                   
+                   
+                    
+                </div>
+                  <div class="footer_copy">
+                    <p>Copyright Dghotel @ 2016</p>
+                </div>
+            </div>
+        </div>
+              
+                
+        
+                </div>
+        
+             
+        </footer>    
+        
+    </body>
+</html>

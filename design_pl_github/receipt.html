@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <link rel="stylesheet" href="receipt.csc" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <header>
+           <div class="home">
+               
+                <div class="headnav">
+                        <div class="inner_banner_room">
+                            <div class="title_room">
+                                <center>
+                                <h1 style="border: 1px solid black; color: blue;background-color:gray; padding: 10px;"> FINAL RECEIPT FOR CUSTOMER </h1>
+                                    </center>
+                            </div>
+                        </div>                                    
+                    </div>
+                
+            </div>   
+                   
+        </header>
+        
+        <section>              
+               <div class="div1">                             
+              
+               
+               
+                   
+               <h3>Final Receipt</h3>
+                   <center>
+
+              <table border="1">
+                  <tr><td>DETAILS</td><td>OF RECEIPT</td></tr>
+               <tr>
+               <td>Customer Name:<input type="text" name="cname"
+                            value="" readonly></td>   
+                <td>Email Id:<input type="text" name="email" value="" readonly></td>   
+               </tr>
+                <tr>
+                <td>Address:<input type="text" name="add" value="" readonly></td> 
+                
+                <td>City:<input type="text" name="city" value="" readonly></td></tr>  
+                  <tr>
+                  <td>state:<input type="text" name="state" value=""readonly></td>
+                  <td>Pincode:<input type="text" name="pin" value="" readonly></td>
+                  </tr>    
+                  
+                     <tr>
+                  <td>Card Name:<input type="text" name="cname" value=""readonly></td>
+    
+                  <td>Card Number:<input type="text" name="cno" value=""readonly></td>
+                  </tr> 
+                  
+                  <tr>
+                  <td>Exp_month:<input type="text" name="emonth" value=""readonly></td>
+                  <td>Exp_Year:<input type="text" name="year" value=""readonly></td>
+                      <td>CVV:<input type="text" name="cvv" value=""readonly></td>
+                  </tr>
+                    <tr>
+                  <td>CheckIn:<input type="text" name="cin" value=""readonly></td>
+                  <td>CheckOut:<input type="text" name="cout" value=""readonly></td>
+                      <td>Rate:<input type="text" name="rate" value=""readonly></td>
+                  </tr>
+                  
+                  
+               </table>
+            </center>
+            <center><button type="submit" name="submit" onClick="fun()" class="sub"></button></center>
+            <script> 
+                function fun()
+                   {
+                     window.location.replace('index.php');
+                   }
+                </script>
+            </div>
+        
+        
+        </section>
+    </body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>
+            BOOKING PAGE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel1.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+                   <div class="headnav">
+                        <div class="inner_banner_book">
+                            <div class="title_room">
+                                <h1> BOOKING </h1>
+                            </div>
+                        </div>                                    
+                    </div>
+        </header>
+        
+        <section>
+            <h2>ROOM BOOKING FORM</h2>
+            <div class="row_book">
+  <div class="col-75">
+    <div class="container_book">
+      <form method="get" formnovalidate>
+      
+        <div class="row_book">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Priya Dharshini.P" pattern="[a-z]{1,30}" required>
+            <p id="err1" class="error"></p>
+            
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" placeholder="priya@example.com" required>
+             <p id="err2" class="error"></p>
+             
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="adr" placeholder="142 jj Nagar" pattern="[a-zA-Z0-9]+" required>
+             <p id="err3" class="error"></p>
+             
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Chennai" pattern="[a-z]{1,15}" required>
+             <p id="err4" class="error"></p>
+
+            <div class="row_book">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="TAMILNADU" pattern="[a-z]{1,15}" required>
+                 <p id="err5" class="error"></p>
+              </div>
+              <div class="col-50">
+                <label for="zip">Pin/Zip</label>
+                <input type="text" id="zip" maxlength="6" name="zip" placeholder="600118" pattern="[0-9]{6}"required>
+                 <p id="err6" class="error"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cname" placeholder="priyadharshini" pattern="[a-z]{1,30}" required>
+             <p id="err7" class="error"></p>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="ccnum"  maxlength="19" placeholder="1111-2222-3333-4444" pattern="\d{4}-\d{4}-\d{4}-\d{4}" size="19" required>
+             <p id="err8" class="error"></p>
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September" pattern="[a-z]{1,10}" required>
+             <p id="err9" class="error"></p>
+            <div class="row_book">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" maxlength="4" name="expyear" placeholder="2018" pattern="[0-9]{4}"required>
+                 <p id="err10" class="error"></p>
+                  <label for="cvv">RATE</label>
+                <input type="text" id="rate" name="rate"value=""readonly>
+                  <label for="cvv">CHECK OUT</label>
+                <input type="text" id="cout" name="cout"value=""readonly>
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" maxlength="3" name="cvv" placeholder="352" pattern="[0-9]{3}" required>
+                 <p id="err11" class="error"></p>
+                  <div class="col-50">
+                <label for="cvv">CHECK IN</label>
+                <input type="text" id="cin" name="cin"value=""readonly>
+               
+              </div>
+              </div>
+                
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr" required> Agree Terms And Conditions
+        </label>
+          <button type="submit" id="submit" name="submit" value="CONFIRM" class="btn" onClick="funct()"></button>
+      </form>
+       
+    </div>
+  </div>
+            </div>
+<script type="text/javascript">
+	var btn=document.getElementById("submit");
+	btn.onclick=function(e){
+		
+		var bool=validate();
+		if(bool==false){
+			e.preventDefault();
+		}
+	};
+	function validate(){
+           
+                var fname=document.getElementById("fname");
+                var email=document.getElementById("email");
+                var address=document.getElementById("adr");
+                var city=document.getElementById("city");
+                var  state=document.getElementById("state");
+                var zip=document.getElementById("zip");
+		        var card=document.getElementById("cname");
+                var cardno=document.getElementById("ccnum");
+                var exp_month=document.getElementById("expmonth");
+                  var exp_year=document.getElementById("expyear");
+                var cvv=document.getElementById("cvv");
+				
+				var check=1;
+                if(fname.checkValidity){
+                    
+                    document.getElementById("err1").innerHTML=fname.validationMessage;
+					if(fname.validationMessage.toString().length!=0)check=0;
+                }
+                
+                
+		if(email.checkValidity){
+			 document.getElementById("err2").innerHTML=email.validationMessage;
+			 if(email.validationMessage.toString().length!=0)check=0;
+		}
+                
+		
+		if(address.checkValidity)
+            {
+            	
+                document.getElementById("err3").innerHTML=address.validationMessage;
+				if(address.validationMessage.toString().length!=0)check=0;
+            }
+            if(city.checkValidity)
+            {
+            	
+                document.getElementById("err4").innerHTML=city.validationMessage;
+				if(city.validationMessage.toString().length!=0)check=0;
+            }
+            if(state.checkValidity)
+            {
+            	
+                document.getElementById("err5").innerHTML=state.validationMessage;
+				if(state.validationMessage.toString().length!=0)check=0;
+            }
+             if(zip.checkValidity)
+            {
+            	
+                document.getElementById("err6").innerHTML=zip.validationMessage;
+				if(zip.validationMessage.toString().length!=0)check=0;
+            }
+             if(card.checkValidity)
+            {
+            	
+                document.getElementById("err7").innerHTML=card.validationMessage;
+				if(card.validationMessage.toString().length!=0)check=0;
+            }
+              if(cardno.checkValidity)
+            {
+            	
+                document.getElementById("err8").innerHTML=cardno.validationMessage;
+				if(cardno.validationMessage.toString().length!=0)check=0;
+            }
+             if(exp_month.checkValidity)
+            {
+            	
+                document.getElementById("err9").innerHTML=exp_month.validationMessage;
+				if(exp_month.validationMessage.toString().length!=0)check=0;
+            }
+            if(exp_year.checkValidity)
+            {
+            	
+                document.getElementById("err10").innerHTML=exp_year.validationMessage;
+				if(exp_year.validationMessage.toString().length!=0)check=0;
+            }
+            if(cvv.checkValidity)
+            {
+            	
+                document.getElementById("err11").innerHTML=cvv.validationMessage;
+				if(cvv.validationMessage.toString().length!=0)check=0;
+            }
+            
+            if(check==0)return false;
+			else return true;
+            
+            
+	}
+	
+
+</script>      
+            
+        </section>
+        
+        
+        <footer>
+            <div class="footer-area">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget footer-logo-widget">
+                            
+                            <div class="footer-social">
+                                <span>Follow Us:</span>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                   
+                                </ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                   
+                   
+                    
+                </div>
+                  <div class="footer_copy">
+                    <p>Copyright Dghotel @ 2016</p>
+                </div>
+            </div>
+        </div>
+              
+                
+        
+                </div>
+        
+             
+        </footer>    
+            
+            
+        
+        
+    </body>
+</html>

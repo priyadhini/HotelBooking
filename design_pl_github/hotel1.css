@@ -1,0 +1,827 @@
+.topnav{
+    height:fit-content;
+    background-color:white;   
+   height: 45px;
+   width: 100%;
+}
+.inner_banner_img {
+    height: 600px;
+    background-image:url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px black solid;
+    margin-top: 3px;
+    
+    
+}
+.title{
+    font-size: 25px;
+    font-style: italic;
+    font-family: serif;
+    margin-top: 130px;
+    margin-left: 320px;
+    margin-right: 300px;
+    padding-left: 10px; 
+    color:#fff;
+   }
+.topnav a{
+    padding: 10px;
+    font-size: 14px;
+    margin: 10px;
+    font-family: serif;
+      
+}
+img{
+    height: 30px;
+    width: 70px;
+}
+.leftspan{
+    padding-left: 240px;
+    margin: 10px;
+}
+.namelogo{
+    font-family: sans-serif;   
+    font-style:italic;
+    color:darkgreen;
+    direction: rtl;
+    text-shadow: 3px 2px red;
+   
+}
+
+/* RESERVATION OR AVALIBITY  */
+.check_form{
+  position: absolute;
+  right: 0;
+  margin-top: 5%;
+  margin-left:0px;
+  margin-right: 60%;  
+  max-width: 27%;
+  padding: 8px;
+  background-color:black;
+  opacity: 0.8;
+  color: whitesmoke;
+}
+input[type=number],input[type=date] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background:#666666;
+  opacity: 0.7;
+  color: black;
+  border: 0 solid grey;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn_check {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn_check:hover {
+  opacity: 1;
+}
+
+
+
+/*SIGNUP PAGE*/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  align-items: center;
+  
+}
+
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: red;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color:darkmagenta;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+  color: black;
+}
+
+/* Add padding to container elements */
+.container_sign {
+padding: 16px;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+/*ABOUT PAGE*/
+
+ * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+ 
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+ 
+}
+.imgs{
+    height: 50%;
+    width: 100%;
+   
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*members details*/
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 14px;
+  border-radius: 20px;
+  width: 80%;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title1 {
+  color: grey;
+}
+
+.card img{
+    height:250px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 20px;
+    
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.column1{
+     float: left;
+  margin-left: 20px;
+  margin-bottom: 16px;
+  padding: 0 4px;
+  width: 50%;
+}
+.column2{
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 16px;
+  width: 40%;
+    
+     
+}
+
+.column1 img{
+   
+    height: 90%;
+    width: 90%;
+   
+}
+.container1 {
+    font-size: 14px; 
+    margin-bottom: 16px;
+    padding: 0 8px;
+    width: 100%;
+    height: 20%;
+  
+    
+}
+.container1 h1{
+    font-size:30px; 
+        
+}
+
+
+/*CONTACT PAGE*/
+.contact_bg img{
+    margin-left:0;
+    width: 1360px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.contact_inner{
+   
+    border: 2px solid white;  
+   font-style: italic;
+}
+
+.contact-area-head {
+    margin: 0 0 47px;
+}
+.cf-msg {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cf-msg p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: capitalize;
+}
+.cf-input-box {
+    margin: 0 0 30px;
+   
+}
+
+.cf-input-box input[type="text"],
+.cf-input-box input[type="email"] {
+    background: buttonshadow  none repeat scroll 0 0;
+    border: 0 none;
+    color: whitesmoke;
+    font-size: 13px;
+    height: 40px;
+    letter-spacing: 0;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.cf-input-box input[type="text"] {}
+.cf-input-box input[type="email"]{}
+.cf-input-box textarea {
+    background:#ccc  none repeat scroll 0 0;
+    border: 0 none;
+    color: #888888;
+    font-size: 13px;
+    height: 200px;
+    letter-spacing: 0;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.cf-input-box button {
+    background: #006633 none repeat scroll 0 0;
+    border: 0 none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 8px 40px;
+}
+
+.contact2-contact-elements {
+    padding: 63px 0 0;
+}
+
+.contact2-contact-elements .ce-box {
+    margin: 0 83px;
+    width: 100%;
+}
+.contact-elements {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ce-box {
+    margin: 0 0 27px;
+    width: 50%;
+}
+
+.ce-box h2 {
+    color: #070e13;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.ce-box p,
+.ce-box a {
+    color: #070e13;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+/* ROOM PAGE  */
+.inner_banner_room{
+    height: 300px;
+    background-image:url('image/room11.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px black solid;
+    margin-top: 3px;
+}
+.title_room{
+   
+    font-family: serif;
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-left: 160px; 
+    color: whitesmoke;
+    font-size: 25px;
+   
+}
+.room1 {
+    border: 1px solid black;
+    margin: 100px 200px;
+    padding: 20px 20px;
+    height: 350px;
+    background-image: url('image/room1.jpg');
+    width: 500px; 
+    background-size: cover;
+}
+.room2{
+     border: 1px solid black;
+    margin: 100px 200px;
+    padding: 20px 20px;
+    height: 350px;
+    background-image: url('image/room112.jpg');
+    width: 500px; 
+    background-size: cover;
+}
+.room3{
+     border: 1px solid black;
+    margin: 100px 200px;
+    padding: 20px 20px;
+    height: 350px;
+    background-image: url('image/room116.jpg');
+    width: 500px; 
+    background-size: cover;
+}
+.room_content1 {
+    border: 2px solid whitesmoke;
+    margin: 10px 450px;
+    padding: 10px 10px;
+    background-color:#000000;
+    opacity: 0.7;
+    color: whitesmoke;
+    width: 450px;
+    height: 300px;
+     box-shadow: 10px 10px 5px grey;
+    
+}
+.room_content2{
+     border: 2px solid whitesmoke;
+    margin: 10px 450px;
+    padding: 10px 10px;
+    background-color:#000000;
+    opacity: 0.7;
+    color: whitesmoke;
+    width: 450px;
+    height: 300px;
+     box-shadow: 10px 10px 5px grey;
+   
+}
+.room_content3{
+     border: 2px solid whitesmoke;
+    margin: 10px 450px;
+    padding: 10px 10px;
+    background-color:#000000;
+    opacity: 0.7;
+    color: whitesmoke;
+    width: 450px;
+    height: 300px;
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.btn_rate {
+    padding: 10px 10px;
+    margin-top:300px;
+    color: whitesmoke;
+    font-size: 22px;
+    font-style: italic;
+    background-color:#000066;
+    position: absolute;
+    font-family:monospace;
+    text-shadow: 3px 2px black; 
+    
+}
+.btn_book{
+    width: 140px;    
+    background-color:#000066;
+    color: wheat;
+    padding: 10px 5px;
+    margin: 10px 10px;
+    
+   
+}
+.btn_book:hover{
+      box-shadow: 5px 5px 5px grey;
+      border: 2px dotted black;
+}
+/*Footer*/
+.footer-area {
+    background: #070e13 none repeat scroll 0 0;
+    
+}
+
+.footer-top-area {
+    padding: 65px 0 30px;
+}
+
+
+.footer-logo {
+    margin: 34px 0 0;
+}
+
+.footer-social {
+    margin: 21px 0 0;
+}
+
+.footer-social>span {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.footer-social ul {
+    display: inline-block;
+    list-style: outside none none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    display: inline-block;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    display: block;
+    margin: 0 5px;
+}
+
+.footer-social ul li a::hover {
+    color: #b58a60;
+}
+
+.footer-widget .widget-title {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 19px;
+    text-transform: uppercase;
+}
+
+.footer-widget .widget-title::before {
+    display: none;
+}
+
+.footer_copy{
+    float: left;
+    padding: 5px;  
+    color: whitesmoke;
+    font-size: 14px;
+    display: inline;
+    
+}
+
+
+/* Gallery*/
+section{
+ box-sizing: border-box;
+ width: 100%;
+ 
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  
+  
+}
+.column3 {
+  flex: 25%;
+  max-width: 30%;
+  padding: 0 4px;
+  margin-left: 30px;
+}
+
+.column3 img {
+  margin-top: 8px;
+   
+}
+@media screen and (max-width: 800px) {
+  .column3 {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+/*BOOK ROOM STYLES*/
+/*BOOKING ROOM PAGE*/
+.inner_banner_book{
+    height: 300px;
+    background-image:url('recep.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px black solid;
+    margin-top: 3px;
+    opacity: 0.7;
+}
+.row_book {
+   display: flex;
+    flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+    flex: 25%;
+}
+
+.col-50 {
+ 
+  flex: 50%;
+}
+
+.col-75 {
+ 
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container_book {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.row_book input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+
+
+@media (max-width: 800px) {
+  .row_book {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.error{
+    color: red;
+}
+
+
